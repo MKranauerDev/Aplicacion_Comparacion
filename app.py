@@ -289,29 +289,62 @@ details > div {
 
 /* Metric cards */
 .metric-card {
-    padding: 24px;
-    border-radius: 24px;
+    padding: 28px 24px;
+    border-radius: 26px;
     color: white;
-    min-height: 220px;
+
+    height: 260px;              /* 🔥 más alto */
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
     position: relative;
     overflow: hidden;
-    margin-bottom: 8px;
-    animation: fadeUp 0.55s ease;
+
+    gap: 12px;                  /* 🔥 más aire entre elementos */
+}
+
+.metric-title {
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.95;
+}
+
+.metric-value {
+    font-size: 72px;           /* 🔥 más protagonista */
+    font-weight: 800;
+    line-height: 1;
+}
+
+.metric-sub {
+    font-size: 15px;
+    opacity: 0.9;
+    max-width: 75%;            /* 🔥 evita líneas largas */
+    line-height: 1.4;
+}
+
+.metric-pct {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.18);
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .metric-card::before {
     content: "";
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
+    background: rgba(255,255,255,0.08);
     border-radius: 50%;
-    top: -56px;
-    right: -24px;
-    background: rgba(255,255,255,0.10);
+    top: -40px;
+    right: -40px;
 }
 
 .metric-card::after {
