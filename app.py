@@ -525,11 +525,20 @@ details > div {
 }
 /* 📱 MOBILE */
 @media (max-width: 768px) {
+    div[data-testid="column"] {
+            display: flex;
+            justify-content: center;
+        }
 
     .metric-card {
         height: auto;              /* 🔥 clave: sacamos altura fija */
         padding: 20px;
         border-radius: 20px;
+        margin-bottom: 12px;
+        border-radius: 22px;
+        width:85%;
+        margin-left: auto;   
+        margin-right: auto;
     }
 
     .metric-value {
