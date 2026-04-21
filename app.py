@@ -530,6 +530,21 @@ details > div {
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
+    .app-title{
+        text-align:center;
+    }
+    
+    .section-title{
+        text-align:center;
+    }
+    
+    .helper-text{
+        padding: 10px 0 0 10px;
+    }
+    .app-kicker {
+        text-align: center;
+    }
+    
     /* Cards */
     .metric-card {
         height: auto;
