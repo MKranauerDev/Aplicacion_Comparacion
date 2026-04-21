@@ -523,26 +523,25 @@ details > div {
         transform: translateY(0);
     }
 }
+
+.toolbar-actions {
+    margin-bottom: 12px;
+}
+
 /* 📱 MOBILE */
 @media (max-width: 768px) {
-    div[data-testid="column"] {
-            display: flex;
-            justify-content: center;
-        }
 
+    /* Cards */
     .metric-card {
-        height: auto;              /* 🔥 clave: sacamos altura fija */
+        height: auto;
         padding: 20px;
-        border-radius: 20px;
-        margin-bottom: 12px;
         border-radius: 22px;
-        width:85%;
-        margin-left: auto;   
-        margin-right: auto;
+        width: 85%;
+        margin: 0 auto 12px auto;
     }
 
     .metric-value {
-        font-size: 48px;           /* 🔥 más chico para mobile */
+        font-size: 48px;
     }
 
     .metric-title {
@@ -558,7 +557,35 @@ details > div {
         font-size: 12px;
         padding: 6px 10px;
     }
-}
+
+    .toolbar-actions div[data-testid="stHorizontalBlock"] {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 10px !important;
+        align-items: stretch !important;
+    }
+
+    .toolbar-actions div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        width: 50% !important;
+        max-width: 50% !important;
+    }
+
+    .toolbar-actions .stButton {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .toolbar-actions .stButton > button {
+        width: 100% !important;
+        min-width: 0 !important;
+        white-space: nowrap !important;
+        font-size: 14px !important;
+        min-height: 46px !important;
+        padding: 10px 12px !important;
+    }
 </style>
 """,
     unsafe_allow_html=True,
@@ -1126,27 +1153,28 @@ if st.session_state.resultado_comparacion is not None:
             "card-red",
         )
 
-    st.markdown("###")
+    st.markdown('<div class="toolbar-actions">', unsafe_allow_html=True)
 
-    top1, top2, top3 = st.columns([1, 1, 2])
+    left_btn, right_btn = st.columns([1, 1], gap="small")
 
-    with top1:
-        if st.button("🧹 Limpiar filtro"):
+    with left_btn:
+        if st.button("🧹 Limpiar", key="btn_limpiar", use_container_width=True):
             st.session_state.filtro_resultado = "Todos"
             st.rerun()
 
-    with top2:
-        if st.button("🔄 Nueva comparación"):
+    with right_btn:
+        if st.button("🔄 Reiniciar", key="btn_reiniciar", use_container_width=True):
             limpiar_estado_comparacion()
             st.cache_data.clear()
             st.rerun()
 
-    with top3:
-        filtro = st.selectbox(
-            "Filtrar resultado",
-            ["Todos", "Coincide", "Con diferencias", "No existe en master"],
-            key="filtro_resultado",
-        )
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    filtro = st.selectbox(
+        "Filtrar resultado",
+        ["Todos", "Coincide", "Con diferencias", "No existe en master"],
+        key="filtro_resultado",
+    )
 
     if filtro != "Todos":
         vista = res[res["resultado"] == filtro].copy()
