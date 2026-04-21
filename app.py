@@ -18,7 +18,7 @@ st.set_page_config(
 col_title, col_logo = st.columns([6, 2], vertical_alignment="center")
 
 with col_title:
-    st.title("Comparador México vs Master")
+    st.title("Comparador Planilla Externa vs Master")
 
 with col_logo:
     st.markdown("""
