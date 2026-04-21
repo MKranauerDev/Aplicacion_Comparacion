@@ -523,6 +523,33 @@ details > div {
         transform: translateY(0);
     }
 }
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    .metric-card {
+        height: auto;              /* 🔥 clave: sacamos altura fija */
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .metric-value {
+        font-size: 48px;           /* 🔥 más chico para mobile */
+    }
+
+    .metric-title {
+        font-size: 16px;
+    }
+
+    .metric-sub {
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    .metric-pct {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
 </style>
 """,
     unsafe_allow_html=True,
