@@ -551,7 +551,11 @@ details > div {
     }
     
     .st-emotion-cache-1ivd0y6 .e3v525e3 {
-    align-self: center;
+        align-self: center;
+    }
+    
+    .st-emotion-cache-wfksaw {
+        align-items: center;
     }
     
     /* Cards */
