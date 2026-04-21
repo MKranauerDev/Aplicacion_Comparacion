@@ -105,7 +105,6 @@ st.markdown(
     border: 1px solid var(--border);
     border-radius: 28px;
     padding: 28px 30px;
-    margin-bottom:30px;
     margin-top:30px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
     animation: fadeUp 0.5s ease;
