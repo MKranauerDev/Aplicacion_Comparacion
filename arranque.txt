@@ -1,4 +1,0 @@
-para arrancar el proyecto:
-ubicarse en la carpeta Python desde terminal 
-luego colocar el siguiente comando:
-python -m streamlit run app/appComparador.py
