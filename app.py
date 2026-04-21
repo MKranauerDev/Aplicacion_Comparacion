@@ -51,12 +51,12 @@ if "filtro_resultado" not in st.session_state:
 
 if "columnas_mostrar" not in st.session_state:
     st.session_state.columnas_mostrar = {
-        "Descripción": True,
-        "Width": True,
+        "Descripción": False,
+        "Width": False,
         "Depth": False,
         "Height": False,
-        "Cubicate": True,
-        "PESO_BRANCH": True,
+        "Cubicate": False,
+        "PESO_BRANCH": False,
     }
 
 if "ultima_ejecucion_ok" not in st.session_state:
