@@ -545,6 +545,15 @@ details > div {
         text-align: center;
     }
     
+    .st-emotion-cache-epvm6 {
+        margin-top:0.75rem;
+        text-align: center;
+    }
+    
+    .st-emotion-cache-1ivd0y6 .e3v525e3 {
+    align-self: center;
+    }
+    
     /* Cards */
     .metric-card {
         height: auto;
