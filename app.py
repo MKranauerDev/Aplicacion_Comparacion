@@ -1004,17 +1004,17 @@ with st.form("form_comparacion"):
             v5, v6 = st.columns(2)
 
             with v1:
-                mostrar_descripcion = st.checkbox("Descripción", value=True, key="ver_desc")
+                mostrar_descripcion = st.checkbox("Descripción", value=False, key="ver_desc")
             with v2:
-                mostrar_width = st.checkbox("Width", value=True, key="ver_width")
+                mostrar_width = st.checkbox("Width", value=False, key="ver_width")
             with v3:
                 mostrar_depth = st.checkbox("Depth", value=False, key="ver_depth")
             with v4:
                 mostrar_height = st.checkbox("Height", value=False, key="ver_height")
             with v5:
-                mostrar_cubicate = st.checkbox("Cubicate", value=True, key="ver_cub")
+                mostrar_cubicate = st.checkbox("Cubicate", value=False, key="ver_cub")
             with v6:
-                mostrar_peso = st.checkbox("Peso", value=True, key="ver_peso")
+                mostrar_peso = st.checkbox("Peso", value=False, key="ver_peso")
 
     tol = {
         "PESO_BRANCH": tol_peso,
