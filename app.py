@@ -69,6 +69,7 @@ if "ultima_ejecucion_ok" not in st.session_state:
 st.markdown(
     """
 <style>
+
 :root {
     --bg: #071122;
     --panel: #0d1729;
@@ -105,7 +106,6 @@ st.markdown(
     border: 1px solid var(--border);
     border-radius: 28px;
     padding: 28px 30px;
-    margin-top:30px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
     animation: fadeUp 0.5s ease;
 }
@@ -152,6 +152,9 @@ st.markdown(
     color: var(--pink);
     line-height: 1;
     opacity: 0.95;
+}
+.st-emotion-cache-gquqoo {
+    display:none;
 }
 
 /* Form panel */
