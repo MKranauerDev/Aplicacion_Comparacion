@@ -156,6 +156,9 @@ st.markdown(
 .st-emotion-cache-gquqoo {
     display:none;
 }
+.st-emotion-cache-wyoiad {
+    display:none;   
+}
 
 /* Form panel */
 
