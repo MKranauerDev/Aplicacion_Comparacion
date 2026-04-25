@@ -100,6 +100,10 @@ st.markdown(
     max-width: 1400px;
 }
 
+._profileContainer_gzau3_53{
+    diaplay:none;
+}
+
 /* Header */
 .app-hero {
     background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(8,17,31,0.92));
