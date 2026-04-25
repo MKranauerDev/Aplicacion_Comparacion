@@ -160,13 +160,6 @@ st.markdown(
     display:none;   
 }
 
-._container_gzau3_1 {
-    display:none;
-}
-._profileContainer_gzau3_53{
-    display:none;
-}
-
 /* Form panel */
 
 
@@ -538,6 +531,13 @@ details > div {
 
 .toolbar-actions {
     margin-bottom: 12px;
+}
+
+._container_gzau3_1 {
+    display:none;
+}
+._profileContainer_gzau3_53 {
+    display:none;
 }
 
 /* 📱 MOBILE */
