@@ -533,9 +533,11 @@ details > div {
     margin-bottom: 12px;
 }
 
-a[href*="streamlit.io"],
-div[class*="viewerBadge"],
-div[class*="profileContainer"] {
+body > a[href*="streamlit.io"] {
+    display: none !important;
+}
+
+body div[class*="viewerBadge"] {
     display: none !important;
 }
 /* 📱 MOBILE */
