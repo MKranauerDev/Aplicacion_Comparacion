@@ -533,7 +533,7 @@ details > div {
     margin-bottom: 12px;
 }
 
-._container_gzau3_1 {
+a._container_gzau3_1 _viewerBadge_nim44_23{
     display: none !important;
 }
 
