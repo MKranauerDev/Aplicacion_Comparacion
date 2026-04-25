@@ -99,13 +99,6 @@ st.markdown(
     padding-bottom: 2rem;
     max-width: 1400px;
 }
-._container_gzau3_1 {
-    display:none;
-}
-._profileContainer_gzau3_53{
-    display:none;
-}
-
 
 /* Header */
 .app-hero {
@@ -165,6 +158,13 @@ st.markdown(
 }
 .st-emotion-cache-wyoiad {
     display:none;   
+}
+
+._container_gzau3_1 {
+    display:none;
+}
+._profileContainer_gzau3_53{
+    display:none;
 }
 
 /* Form panel */
