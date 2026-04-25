@@ -533,14 +533,11 @@ details > div {
     margin-bottom: 12px;
 }
 
-a._container_gzau3_1 _viewerBadge_nim44_23{
+a[href*="streamlit.io"],
+div[class*="viewerBadge"],
+div[class*="profileContainer"] {
     display: none !important;
 }
-
-._profileContainer_gzau3_53 {
-    display: none !important;
-}
-
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
