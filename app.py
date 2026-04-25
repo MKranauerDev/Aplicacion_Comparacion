@@ -534,10 +534,11 @@ details > div {
 }
 
 ._container_gzau3_1 {
-    display:none;
+    display: none !important;
 }
+
 ._profileContainer_gzau3_53 {
-    display:none;
+    display: none !important;
 }
 
 /* 📱 MOBILE */
