@@ -533,13 +533,6 @@ details > div {
     margin-bottom: 12px;
 }
 
-body > a[href*="streamlit.io"] {
-    display: none !important;
-}
-
-body div[class*="viewerBadge"] {
-    display: none !important;
-}
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
